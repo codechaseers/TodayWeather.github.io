@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today Weather</title>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+  
+  <section class="vh-100" style="background-color: #111620;">
+    
+    <div class="container py-5 h-100">
+
+      <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+        
+        <div class="col-md-9 col-lg-7 col-xl-5">
+          <div class="row" style="text-align: center;">
+          
+            <input type="search" id="search" placeholder="Search by city name">
+            <button id="serch_btn">Serch</button>
+      
+    </div>
+          <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+          
+            <div class="card-body p-4">
+
+              <div id="demo1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo1" data-slide-to="1"></li>
+                  <li data-target="#demo1" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class=" carousel-inner" >
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-between mb-4 pb-2" id="weather">
+                      <div>
+                        <h2 class="display-2"><strong>23°C</strong></h2>
+                        <h2 class="text-muted mb-0">Bhadrak</h2>
+                         
+                      </div>
+                      <div >
+                        <img src="https://openweathermap.org/img/wn/04n@2x.png"
+                          width="150px">
+                      </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2" id="wedetail">
+                <div class="flex-column">
+                  <p class="small"><strong>g.m -3 </strong></p>
+                  <i class="fa-solid fa-sun-plant-wilt fa-3x mb-3"></i>
+                  <p class="mb-0"><strong>Humidity</strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong>°C</strong></p>
+                  <i class="fa-solid fa-temperature-quarter fa-3x mb-3"></i>
+                  <p class="mb-0"><strong>Feels like</strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong>°C</strong></p>
+                  <i class="fa-solid fa-temperature-full fa-3x mb-3"></i>
+                  <p class="mb-0"><strong>Temp max</strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong>°C</strong></p>
+                  <i class="fa-solid fa-temperature-empty fa-3x mb-3"></i>
+                  <p class="mb-0"><strong>Temp min</strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong>Km/h</strong></p>
+                   
+                  <i class="fa-solid fa-wind fa-3x mb-3"></i>
+                  <p class="mb-0"><strong>Wind speed</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- MDB -->
+  <script src="weather_app.js"></script>
+  <script src="https://kit.fontawesome.com/a482b607c3.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+</body>
+
+</html>
