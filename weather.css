@@ -39,3 +39,9 @@
    background: linear-gradient(to right, rgb(61, 88, 111), rgb(73, 100, 35));
     border-radius: 22px;
 }
+.svg{
+   height: 20rem;
+  width: 22rem;
+  margin: auto;
+  /* border: 2px solid red ; */
+}
