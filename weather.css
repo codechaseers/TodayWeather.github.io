@@ -18,9 +18,14 @@
   color: black;
  
   } */
+  .city_list{
+    list-style-position: inside;
+    color: #ffffff;
+    /* list-style: none; */
+  }
    .carousel-inner{
     background: linear-gradient(to right, rgb(98, 50, 111), rgb(123, 118, 185));
-    border-radius: 21px;
+   
   }
   
   #search {
